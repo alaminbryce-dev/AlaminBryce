@@ -1,11 +1,11 @@
 
 :root{
-  --sky:   #b3e5fc;  /* bright pastel sky blue */
-  --sky-2: #e1f5fe;  /* softer background blue */
-  --ink:   #263238;  /* deep pastel charcoal (for text) */
-  --muted: #607d8b;  /* muted teal/blue-gray */
+  --sky:   #cfe9ff;  /* bright pastel sky blue */
+  --sky-2: #e8f4ff;  /* softer background blue */
+  --ink:   #0a2540;  /* deep pastel charcoal (for text) */
+  --muted: #47627f;  /* muted teal/blue-gray */
   --card:  #ffffff;  /* clean white for cards */
-  --ring:  #b2ebf2;  /* pastel aqua border/ring */
+  --ring:  #d5e7ff;  /* pastel aqua border/ring */
   --radius: 20px;
 }
 *{box-sizing:border-box}
@@ -29,7 +29,7 @@ body{
   gap:12px;
   padding:14px 16px;
   backdrop-filter: saturate(110%) blur(6px);
-  background-color: #e1f5fe;
+  background-color: #e8f4ff;
   border-bottom: 1px solid var(--ring);
 }
 .brand h1{

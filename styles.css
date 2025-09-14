@@ -1,11 +1,11 @@
 
 :root{
-  --sky: #cfe9ff;
-  --sky-2: #e8f4ff;
-  --ink: #0a2540;
-  --muted: #47627f;
-  --card: #ffffff;
-  --ring: #d5e7ff;
+  --sky:   #7ec8f8;  /* Vibrant light blue background accent */
+  --sky-2: #d6f0ff;  /* Softer, lighter complementary base */
+  --ink:   #0d1b3f;  /* Deep navy for strong text contrast */
+  --muted: #2e5aac;  /* Bold muted blue for subtitles/details */
+  --card:  #ffffff;  /* Crisp white for cards */
+  --ring:  #7ab8ff
   --radius: 20px;
 }
 *{box-sizing:border-box}

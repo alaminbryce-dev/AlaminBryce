@@ -29,7 +29,7 @@ body{
   gap:12px;
   padding:14px 16px;
   backdrop-filter: saturate(110%) blur(6px);
-  background-color: rgba(232,244,255,0.85);
+  background-color: #d6f0ff;
   border-bottom: 1px solid var(--ring);
 }
 .brand h1{

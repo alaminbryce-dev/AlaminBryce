@@ -15,34 +15,35 @@
     *{box-sizing:border-box}
     body{margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;color:var(--text);background:var(--panel);}
 
+    /* Desktop background blur */
     @media(min-width:900px){
       body::before{content:"";position:fixed;inset:0;z-index:-2;background:url('Top-main-image.png') center/cover no-repeat fixed;filter:blur(36px) saturate(110%) brightness(80%);transform:scale(1.1);}  
       .page{background:rgba(0,0,0,.45);border-radius:20px;box-shadow:var(--shadow);padding:40px;max-width:860px;margin:60px auto}
       .hero-wrap{display:none}
-      .card-media img{aspect-ratio:4/5;object-fit:cover}
     }
 
     .share{position:fixed;right:16px;top:16px;z-index:30;width:44px;height:44px;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.25);border-radius:50%;cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow)}
     .share svg{width:20px;height:20px;fill:currentColor}
 
-    .hero-wrap{position:relative;height:35vh;max-height:280px}
+    /* Mobile hero */
+    .hero-wrap{position:relative;height:45vh;max-height:320px}
     .hero-bg{position:absolute;inset:0;background:url('Top-main-image.png') center/cover no-repeat}
-    .hero-fade{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 70%,var(--panel) 100%)}
+    .hero-fade{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 75%,var(--panel) 100%)}
     .hero-content{position:absolute;inset:0;display:grid;align-content:end;justify-items:center;gap:14px;padding:18px;text-align:center}
     .title{font-size:clamp(34px,8vw,64px);font-weight:900;text-shadow:0 12px 36px rgba(0,0,0,.55)}
     .email{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28)}
     .email svg{width:22px;height:22px;fill:var(--text)}
     .subtitle{font-size:clamp(16px,3.5vw,22px);font-weight:800;max-width:900px}
 
+    /* Cards */
     .cards{display:grid;gap:22px;margin-top:20px}
     .card{display:grid;grid-template-rows:auto 1fr;border-radius:var(--radius);overflow:hidden;background:#0b2f53;box-shadow:var(--shadow);text-decoration:none;color:var(--text)}
-    .card-media{position:relative;}
-    .card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .card-media img{width:100%;height:auto;display:block}
     .card-body{padding:24px}
     .card-title{margin:0 0 10px;font-size:clamp(18px,3.4vw,22px);font-weight:900}
     .card-text{margin:0;opacity:.94;font-weight:700;line-height:1.4}
 
-    .card.patreon .card-media{min-height:480px}
+    .card.patreon .card-media img{width:100%;height:auto;display:block}
     .card.patreon .card-title{font-size:clamp(22px,4.4vw,28px)}
     .card.patreon{transform:scale(1.02)}
 
@@ -105,7 +106,7 @@
     shareBtn.addEventListener('click',async()=>{
       const shareData={title:document.title,text:'Check out AlaminBryce',url:window.location.href};
       try{
-        if(navigator.share)await navigator.share(shareData);else{await navigator.clipboard.writeText(shareData.url);shareBtn.style.transform='scale(.92)';setTimeout(()=>shareBtn.style.transform='none',160)}}catch(e){console.log(e)}});
+        if(navigator.share)await navigator.share(shareData);else{await navigator.clipboard.writeText(shareData.url);shareBtn.style.transform='scale(.92)';setTimeout(()=>shareBtn.style.transform='none',160)}}catch(e){console.log(e)} });
   </script>
 </body>
 </html>

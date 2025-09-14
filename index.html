@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AlaminBryce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="High tiers get 4 extra videos & pics per post! ($12 and higher)" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>AlaminBryce</h1>
+      <p class="subtitle">High tiers get 4 extra videos &amp; pics per post! ($12 and higher)</p>
+    </div>
+    <button id="shareBtn" class="icon-btn" aria-label="Share this page" title="Share">
+      <!-- Share icon (no text) -->
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M18 8a3 3 0 1 0-2.83-4H15a3 3 0 0 0 .17 1l-7.2 4a3 3 0 1 0 0 6l7.2 4c-.11.31-.17.65-.17 1a3 3 0 1 0 1.17-2.36l-7.2-4a3 3 0 0 0 0-1.28l7.2-4C16.83 8.36 17.39 8 18 8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- Top image with subtle fade into background; sized so other content stays visible on mobile -->
+    <section class="hero">
+      <div class="hero-img-wrap">
+        <img src="assets/top-image.png" alt="Feature image" class="hero-img" />
+      </div>
+    </section>
+
+    <section class="actions">
+      <a class="card email" href="mailto:alaminbryce@gmail.com">
+        <div class="thumb">
+          <img src="assets/patreon.png" alt="Email icon placeholder">
+        </div>
+        <div class="text">
+          <h2>Email</h2>
+          <p>alaminbryce@gmail.com</p>
+        </div>
+      </a>
+
+      <a class="card patreon" href="https://patreon.com/AlaminBryce" target="_blank" rel="noopener">
+        <div class="thumb">
+          <img src="assets/patreon.png" alt="Patreon image">
+        </div>
+        <div class="text">
+          <h2>PATREON</h2>
+          <p>Request poses, actions, characters here on Patreon</p>
+        </div>
+      </a>
+
+      <a class="card instagram" href="https://instagram.com/alaminbryce_ai" target="_blank" rel="noopener">
+        <div class="thumb">
+          <img src="assets/instagram.png" alt="Instagram image">
+        </div>
+        <div class="text">
+          <h2>Instagram</h2>
+          <p>I post SFW pics &amp; videos here</p>
+        </div>
+      </a>
+
+      <a class="card discord" href="https://discord.gg/r2p8jU83Wm" target="_blank" rel="noopener">
+        <div class="thumb">
+          <img src="assets/discord.png" alt="Discord image">
+        </div>
+        <div class="text">
+          <h2>Discord</h2>
+          <p>Join the community server</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> AlaminBryce</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

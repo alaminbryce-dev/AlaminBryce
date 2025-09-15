@@ -175,11 +175,10 @@ body{
 } 
 
 /* Podium white background for better readability */
-.podium-col {
-  background: #fff;
-  border-radius: 16px;
-  padding: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+.podium-col .name,
+.podium-col .amount,
+.podium-col .place {
+  color: #222;  /* ensure text contrasts with white */
 }
 
 /* Podium blocks */

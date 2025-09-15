@@ -172,19 +172,14 @@ body{
 .podium-col .amount{
   color: var(--muted);
   font-size: clamp(0.9rem, 2.2vw, 1rem);
-}
+} 
 
 /* Podium white background for better readability */
 .podium-col {
-  background: #fff;          /* white background */
-  border-radius: 16px;       /* rounded corners */
-  padding: 10px;             /* space around text */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow */
-}
-.podium-col .name,
-.podium-col .amount,
-.podium-col .place {
-  color: #222;  /* ensure text contrasts with white */
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* Podium blocks */

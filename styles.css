@@ -202,7 +202,7 @@ body{
 .place{
   margin-top: 4px;
   font-weight: 800;
-  color: var(--ink);
+  color: var(--card);
 }
 
 /* Crowns (SVG as background) */

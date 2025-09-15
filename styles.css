@@ -147,6 +147,7 @@ body{
   margin: 8px 0 14px;
   font-weight: 800;
   font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  color:#ffff
 }
 
 /* Podium layout */

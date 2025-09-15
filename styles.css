@@ -174,34 +174,52 @@ body{
   font-size: clamp(0.9rem, 2.2vw, 1rem);
 } 
 
-/* Podium white background for better readability */
-.podium-col .name,
-.podium-col .amount,
-.podium-col .place {
-  color: #222;  /* ensure text contrasts with white */
-}
-
-/* Shared connected podium base */
-.podium {
-  background: #fff; 
-  border-radius: 16px;
-  padding: 14px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-}
-
-.podium {
+/* CONNECTED podium: columns touch, outer edges rounded, heights follow each block */
+.podium{
+  /* stays a grid and bottom-aligned so column heights reflect each block height */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: end;
-  gap: 0; /* remove spacing */
+  gap: 0;                        /* remove spacing so columns connect */
+  position: relative;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.08)); /* single shadow for the whole stage */
 }
 
-.podium-col {
-  border-right: 1px solid #eee;
+/* Each column = white panel (so text is readable) */
+.podium-col{
+  background: #fff;
   padding: 10px;
 }
-.podium-col:last-child {
-  border-right: none;
+
+/* Make it feel like one connected card: only outer corners rounded */
+.podium-col:first-child{
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.podium-col:last-child{
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* Thin internal seams so it's connected but still readable */
+.podium-col + .podium-col{
+  border-left: 1px solid #eee;
+}
+
+/* Keep text readable on white */
+.podium-col .name,
+.podium-col .amount,
+.podium-col .place{
+  color: #222;
+}
+
+/* Make sure blocks still drive the column height (already bottom-aligned).
+   You can keep your existing .first/.second/.third .block min-heights,
+   plus JS dynamic minHeight; no changes needed there. */
+
+/* Optional: a little breathing room inside each column on small screens */
+@media (max-width:720px){
+  .podium-col{ padding: 8px; }
 }
 
 /* Podium blocks */

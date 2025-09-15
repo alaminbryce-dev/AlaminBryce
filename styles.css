@@ -120,8 +120,8 @@ body{
   .actions{ gap:16px; padding: 0 16px 24px; }
   .card{ padding:14px; gap:16px; }
   .card .thumb{ flex-basis: 120px; }
-  .card .text h2{ font-size:clamp(3rem, 3vw, 4rem); }
-  .card.patreon .text h2{ font-size:clamp(3rem, 3vw, 4rem); }
+  .card .text h2{ font-size:clamp(2.7rem, 2.7vw, 3.6rem); }
+  .card.patreon .text h2{ font-size:clamp(2.7rem, 2.7vw, 3.6rem); }
   .card .text p { font-size: clamp(1.6rem, 1.8vw, 2.1rem); }
 }
 

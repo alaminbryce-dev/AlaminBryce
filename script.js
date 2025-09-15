@@ -27,15 +27,13 @@ shareBtn.addEventListener('click', async () => {
  * amount: number (USD or any currency symbol you like in formatMoney)
  */
 const contributors = [
-  { name: "Emily (Hazbin Hotel)", amount: 260 },
-  { name: "Yuki", amount: 180 },
-  { name: "Ravi", amount: 125 },
-  { name: "Mia", amount: 110 },
-  { name: "Kenta", amount: 90 },
-  { name: "Sora", amount: 80 },
-  { name: "Aruna", amount: 75 },
-  { name: "Dewi", amount: 70 },
-  { name: "Noah", amount: 60 }
+  { name: "TastySalts", amount: 159 },
+  { name: "isaidgetlost", amount: 53 },
+  { name: "Akishira", amount: 53 },
+  { name: "Zitronen", amount: 50 },
+  { name: "Seo", amount: 45 },
+  { name: "Richard", amount: 43 },
+  { name: "Drew", amount: 38 }
 ];
 
 function formatMoney(n){ 

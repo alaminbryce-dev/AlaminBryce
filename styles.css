@@ -292,7 +292,7 @@ body{
   padding: 0 12px;
 }
 .milestone-title{
-  margin: 4px 0 6px;
+  margin: 2px 0 12px;
   font-weight: 800;
   font-size: clamp(1.2rem, 3.2vw, 1.6rem);
   color:#ffff

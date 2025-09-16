@@ -141,7 +141,7 @@ body{
 .ranking{
   width:min(900px, 100%);
   margin: 4px auto 1px;
-  padding: 0 12px 3px;
+  padding: 0 12px 1px;
 }
 .ranking-title{
   margin: 8px 0 14px;

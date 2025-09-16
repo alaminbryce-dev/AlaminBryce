@@ -285,3 +285,117 @@ body{
   .second .block{ min-height: 90px; }
   .third .block{ min-height: 70px; }
 }
+/* ===== Milestone Tracker ===== */
+.milestone{
+  width:min(900px, 100%);
+  margin: 24px auto;
+  padding: 0 12px;
+}
+.milestone-title{
+  margin: 4px 0 12px;
+  font-weight: 800;
+  font-size: clamp(1.2rem, 3.2vw, 1.6rem);
+}
+
+.milestone-card{
+  background: var(--card, #fff);
+  border: 1px solid var(--ring, #e5e7eb);
+  border-radius: var(--radius, 16px);
+  padding: 14px;
+  box-shadow: 0 10px 24px rgba(10,37,64,0.06);
+}
+
+.milestone-header{
+  display:flex; align-items:center; justify-content:space-between;
+  gap: 10px; margin-bottom: 10px;
+}
+.milestone-status{
+  display:flex; align-items:baseline; flex-wrap:wrap; gap: 6px;
+  font-weight: 700;
+}
+.ms-figure{ font-size: clamp(1.15rem, 3vw, 1.35rem); }
+.ms-unit{ color: var(--muted, #64748b); font-weight: 600; }
+.ms-sep{ color: var(--muted, #64748b); }
+.ms-goal-label{ color: var(--ink, #0f172a); font-weight: 700; }
+
+.ms-sticker{
+  font-size: 1.25rem;
+  transform: rotate(-8deg);
+}
+
+/* Progress bar */
+.ms-progress{
+  position: relative;
+  height: 14px;
+  background: linear-gradient(180deg, #f7fafc, #eef2f7);
+  border: 1px solid var(--ring, #e5e7eb);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.ms-progress-fill{
+  height: 100%;
+  width: 0%;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffb3c1 0 12px,
+    #ffd6e0 12px 24px
+  ); /* cute pink stripes */
+  border-right: 1px solid rgba(0,0,0,0.1);
+  display:flex; align-items:center; justify-content:flex-end;
+  transition: width .6s ease;
+}
+.ms-sparkle{ margin-right: 6px; font-size: .9rem; opacity:.9; }
+
+/* Steps */
+.ms-steps{
+  list-style:none; margin: 10px 0 0; padding: 0;
+  display:grid; grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.ms-steps .step{
+  display:flex; align-items:center; gap:8px;
+  background: #fff;
+  border: 1px dashed var(--ring, #e5e7eb);
+  border-radius: 12px; padding: 8px 10px;
+  min-width: 0;
+}
+.ms-steps .step .dot{
+  width:14px; height:14px; border-radius:50%;
+  background:#ffd6e0; box-shadow: 0 0 0 2px #fff inset;
+  flex: 0 0 14px;
+}
+.ms-steps .step .label{
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  font-weight: 600; color: var(--ink, #0f172a);
+}
+
+/* States */
+.ms-steps .step.completed{
+  background: #f0fff4; border-color: #bbf7d0;
+}
+.ms-steps .step.completed .dot{ background:#34d399; }
+
+.ms-steps .step.current{
+  background: #fff7ed; border-color: #fed7aa;
+  animation: msPulse 1.5s ease-in-out infinite;
+}
+.ms-steps .step.current .dot{ background:#fb923c; }
+
+@keyframes msPulse{
+  0%,100%{ box-shadow: 0 0 0 0 rgba(251,146,60,.35); }
+  50%{ box-shadow: 0 0 0 6px rgba(251,146,60,.0); }
+}
+
+/* Note */
+.ms-note{
+  margin-top: 10px;
+  font-size: .95rem;
+  color: var(--muted, #64748b);
+}
+
+/* Responsive */
+@media (max-width:720px){
+  .ms-steps{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

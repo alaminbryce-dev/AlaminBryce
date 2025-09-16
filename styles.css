@@ -288,7 +288,7 @@ body{
 /* ===== Milestone Tracker ===== */
 .milestone{
   width:min(900px, 100%);
-  margin: 18px auto;
+  margin: 12px auto;
   padding: 0 12px;
 }
 .milestone-title{

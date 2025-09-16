@@ -140,7 +140,7 @@ body{
 /* ====== RANKING / PODIUM ====== */
 .ranking{
   width:min(900px, 100%);
-  margin: 4px auto 12px;
+  margin: 4px auto 9px;
   padding: 0 12px 9px;
 }
 .ranking-title{

@@ -103,6 +103,42 @@
         </ol>
       </div>
     </section>
+    <!-- MILESTONE TRACKER -->
+<section class="milestone" aria-labelledby="milestone-title">
+  <h2 id="milestone-title" class="milestone-title">Milestones</h2>
+
+  <div class="milestone-card">
+    <div class="milestone-header">
+      <div class="milestone-status">
+        <span id="ms-current" class="ms-figure">0</span>
+        <span id="ms-unit" class="ms-unit">patrons</span>
+        <span class="ms-sep">·</span>
+        <span id="ms-goal-label" class="ms-goal-label">next: —</span>
+      </div>
+      <div class="ms-sticker" aria-hidden="true">💖</div>
+    </div>
+
+    <!-- progress bar -->
+    <div class="ms-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="ms-progress-fill" id="ms-fill">
+        <div class="ms-sparkle" aria-hidden="true">✨</div>
+      </div>
+    </div>
+
+    <!-- milestones row -->
+    <ol class="ms-steps" id="ms-steps" aria-label="Milestone steps">
+      <!-- JS will render:
+        <li class="step completed|current|upcoming">
+          <span class="dot"></span>
+          <span class="label">Label</span>
+        </li>
+      -->
+    </ol>
+
+    <!-- (optional) celebratory note -->
+    <p id="ms-note" class="ms-note" hidden>You're amazing! Next reward unlocking soon 🫶</p>
+  </div>
+</section>
     </section>
   </main>
 

@@ -113,3 +113,115 @@ function renderRanking(){
 // Run after page load
 document.addEventListener('DOMContentLoaded', renderRanking);
 
+/* ===== Milestone Tracker (Cute Edition) ===== */
+
+/**
+ * EDIT ME:
+ * - current: your current patrons or money raised
+ * - unit: 'patrons' or 'USD' or 'IDR' … anything you want displayed
+ * - milestones: ordered lowest → highest; each has { target, label }
+ * - mode: 'count' or 'money'
+ */
+const milestoneConfig = {
+  current: 34,                       // ← change this anytime
+  unit: 'patrons',                   // e.g., 'patrons' or 'USD' or 'IDR'
+  mode: 'count',                     // 'count' or 'money'
+  milestones: [
+    { target: 10,  label: 'First 10 💌' },
+    { target: 25,  label: 'Mini print drop' },
+    { target: 50,  label: 'Exclusive timelapse pack' },
+    { target: 100, label: 'Big reward: art tutorial' },
+  ],
+  cuteEmoji: '💖',                   // header sticker
+  sparkle: '✨'                      // sparkle in the bar
+};
+
+// Optional currency formatter if you switch to mode:'money'
+function formatMilestoneValue(n){
+  if(milestoneConfig.mode === 'money'){
+    // Change to IDR if you prefer:
+    // return 'Rp ' + Number(n).toLocaleString('id-ID');
+    return '$' + Number(n).toLocaleString();
+  }
+  return String(n);
+}
+
+function renderMilestones(){
+  const section = document.querySelector('.milestone');
+  if(!section) return;
+
+  const { current, milestones } = milestoneConfig;
+  const stepsEl = document.getElementById('ms-steps');
+  const fill = document.getElementById('ms-fill');
+  const nowEl = document.getElementById('ms-current');
+  const unitEl = document.getElementById('ms-unit');
+  const goalLabelEl = document.getElementById('ms-goal-label');
+  const noteEl = document.getElementById('ms-note');
+
+  // header
+  nowEl.textContent = formatMilestoneValue(current);
+  unitEl.textContent = milestoneConfig.unit;
+  document.querySelector('.ms-sticker').textContent = milestoneConfig.cuteEmoji;
+  document.querySelector('.ms-sparkle').textContent = milestoneConfig.sparkle;
+
+  // build steps
+  stepsEl.innerHTML = '';
+  milestones.forEach((m)=>{
+    const li = document.createElement('li');
+    li.className = 'step';
+    const dot = document.createElement('span'); dot.className = 'dot';
+    const label = document.createElement('span'); label.className = 'label';
+    label.textContent = m.label + ' (' + formatMilestoneValue(m.target) + ')';
+    li.appendChild(dot); li.appendChild(label);
+    stepsEl.appendChild(li);
+  });
+
+  // figure out nearest goal and percent
+  const sorted = [...milestones].sort((a,b)=>a.target-b.target);
+  const maxGoal = sorted[sorted.length-1]?.target ?? 1;
+  const prevGoal = sorted.reduce((acc, m)=> m.target <= current ? m.target : acc, 0);
+  const nextGoal = sorted.find(m=> m.target > current)?.target ?? maxGoal;
+
+  const range = Math.max(1, nextGoal - prevGoal);
+  const within = Math.min(Math.max(0, current - prevGoal), range);
+  const percent = Math.round((within / range) * 100);
+
+  // set fill and ARIA
+  fill.style.width = ((current >= maxGoal) ? 100 : percent) + '%';
+  const progressEl = document.querySelector('.ms-progress');
+  progressEl.setAttribute('aria-valuenow', String(percent));
+
+  // label next target
+  const nextLabel = sorted.find(m=> m.target === nextGoal);
+  goalLabelEl.textContent = current >= maxGoal
+    ? 'goal completed 🎉'
+    : `next: ${nextLabel?.label} (${formatMilestoneValue(nextGoal)})`;
+
+  // mark step states
+  const stepEls = stepsEl.querySelectorAll('.step');
+  sorted.forEach((m, idx)=>{
+    const el = stepEls[idx];
+    el.classList.remove('completed','current','upcoming');
+    if(current >= m.target) el.classList.add('completed');
+    else if(nextGoal === m.target) el.classList.add('current');
+    else el.classList.add('upcoming');
+  });
+
+  // celebratory note
+  if(current >= maxGoal){
+    noteEl.hidden = false;
+    noteEl.textContent = '🎉 Goal reached! Thank you so much!';
+  }else{
+    noteEl.hidden = false;
+    noteEl.textContent = 'You\'re amazing! Next reward unlocking soon 🫶';
+  }
+}
+
+// expose a helper so you can quickly tweak live if needed
+window.updateMilestone = function(newValue){
+  milestoneConfig.current = Number(newValue) || 0;
+  renderMilestones();
+};
+
+document.addEventListener('DOMContentLoaded', renderMilestones);
+

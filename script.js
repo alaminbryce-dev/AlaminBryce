@@ -123,14 +123,14 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 34,                       // ← change this anytime
+  current: 26,                       // ← change this anytime
   unit: 'patrons',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'count',                     // 'count' or 'money'
   milestones: [
     { target: 10,  label: 'First 10 💌' },
-    { target: 25,  label: 'Mini print drop' },
-    { target: 50,  label: 'Exclusive timelapse pack' },
-    { target: 100, label: 'Big reward: art tutorial' },
+    { target: 30,  label: '100 characters post' },
+    { target: 50,  label: 'OC Reveal' },
+    { target: 75,  label: 'Tutorials' },
   ],
   cuteEmoji: '💖',                   // header sticker
   sparkle: '✨'                      // sparkle in the bar

@@ -33,7 +33,7 @@ const contributors = [
   { name: "Zitronen", amount: 50 },
   { name: "Seo", amount: 45 },
   { name: "Richard", amount: 43 },
-  { name: "Drew", amount: 38 }
+  { name: "Drew", amount: 51 }
 ];
 
 function formatMoney(n){ 

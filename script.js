@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 28,                       // ← change this anytime
+  current: 29,                       // ← change this anytime
   unit: 'patrons',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'count',                     // 'count' or 'money'
   milestones: [

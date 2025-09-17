@@ -123,12 +123,12 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 26,                       // ← change this anytime
+  current: 28,                       // ← change this anytime
   unit: 'patrons',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'count',                     // 'count' or 'money'
   milestones: [
-    { target: 10,  label: 'First 10 💌' },
-    { target: 30,  label: '100 characters post' },
+    { target: 10,  label: 'Comics' },
+    { target: 30,  label: 'Mega Post' },
     { target: 50,  label: 'OC Reveal' },
     { target: 75,  label: 'Tutorials' },
   ],

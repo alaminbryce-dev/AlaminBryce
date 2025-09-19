@@ -123,14 +123,14 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 29,                       // ← change this anytime
+  current: 158,                       // ← change this anytime
   unit: 'patrons',                   // e.g., 'patrons' or 'USD' or 'IDR'
-  mode: 'count',                     // 'count' or 'money'
+  mode: 'money',                     // 'count' or 'money'
   milestones: [
-    { target: 10,  label: 'Comics' },
-    { target: 30,  label: 'Mega Post' },
-    { target: 50,  label: 'OC Reveal' },
-    { target: 75,  label: 'Tutorials' },
+    { target: 50,  label: 'Comics' },
+    { target: 100,  label: 'Mega Post' },
+    { target: 200,  label: 'OC Reveal' },
+    { target: 300,  label: 'Tutorials' },
   ],
   cuteEmoji: '💖',                   // header sticker
   sparkle: '✨'                      // sparkle in the bar

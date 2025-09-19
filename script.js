@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  */
 const milestoneConfig = {
   current: 158,                       // ← change this anytime
-  unit: 'patrons',                   // e.g., 'patrons' or 'USD' or 'IDR'
+  unit: 'monthly earning',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'money',                     // 'count' or 'money'
   milestones: [
     { target: 50,  label: 'Comics' },

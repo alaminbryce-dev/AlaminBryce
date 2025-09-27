@@ -28,12 +28,12 @@ shareBtn.addEventListener('click', async () => {
  */
 const contributors = [
   { name: "TastySalts", amount: 159 },
-  { name: "isaidgetlost", amount: 53 },
-  { name: "Akishira", amount: 53 },
+  { name: "isaidgetlost", amount: 54 },
+  { name: "Akishira", amount: 54 },
   { name: "Zitronen", amount: 50 },
-  { name: "Seo", amount: 45 },
+  { name: "Seo", amount: 55 },
   { name: "Richard", amount: 43 },
-  { name: "Drew", amount: 51 }
+  { name: "Drew", amount: 52 }
 ];
 
 function formatMoney(n){ 

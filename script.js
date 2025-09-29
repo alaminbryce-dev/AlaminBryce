@@ -28,9 +28,9 @@ shareBtn.addEventListener('click', async () => {
  */
 const contributors = [
   { name: "TastySalts", amount: 159 },
-  { name: "isaidgetlost", amount: 54 },
+  { name: "isaidgetlost", amount: 63 },
   { name: "Akishira", amount: 54 },
-  { name: "Zitronen", amount: 50 },
+  { name: "Zitronen", amount: 60 },
   { name: "Seo", amount: 55 },
   { name: "Richard", amount: 43 },
   { name: "Drew", amount: 52 }

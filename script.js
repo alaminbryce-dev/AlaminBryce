@@ -32,7 +32,7 @@ const contributors = [
   { name: "Akishira", amount: 54 },
   { name: "Zitronen", amount: 60 },
   { name: "Seo", amount: 55 },
-  { name: "Richard", amount: 43 },
+  { name: "Richard", amount: 54 },
   { name: "Drew", amount: 52 }
 ];
 

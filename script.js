@@ -29,11 +29,11 @@ shareBtn.addEventListener('click', async () => {
 const contributors = [
   { name: "TastySalts", amount: 159 },
   { name: "isaidgetlost", amount: 63 },
-  { name: "Akishira", amount: 54 },
+  { name: "Akishira", amount: 63 },
   { name: "Zitronen", amount: 60 },
   { name: "Seo", amount: 55 },
   { name: "Richard", amount: 54 },
-  { name: "Drew", amount: 52 }
+  { name: "Drew", amount: 65 }
 ];
 
 function formatMoney(n){ 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 187,                       // ← change this anytime
+  current: 160,                       // ← change this anytime
   unit: 'monthly earning',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'money',                     // 'count' or 'money'
   milestones: [

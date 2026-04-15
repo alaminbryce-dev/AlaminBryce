@@ -27,7 +27,7 @@ shareBtn.addEventListener('click', async () => {
  * amount: number (USD or any currency symbol you like in formatMoney)
  */
 const contributors = [
-  { name: "Drew", amount: 143 },
+  { name: "Drew Ayling", amount: 143 },
   { name: "Zitronen", amount: 120 },
   { name: "Jimpikins", amount: 54 },
   { name: "Akishira", amount: 140 },

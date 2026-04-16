@@ -126,8 +126,8 @@ body{
 }
 
 /* Keep hero from dominating small screens */
-@media (max-width: 480px){
-  .hero-img-wrap{ max-height: 55vh; }
+@media (max-width: 720px){
+  .hero-img-wrap{ max-height: 45vh; }
 }
 
 .site-footer{

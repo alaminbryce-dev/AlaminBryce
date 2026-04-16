@@ -77,7 +77,7 @@ body{
 /* Action cards */
 .actions{
   width:min(900px, 100%);
-  margin: 4px auto 24px;
+  margin: -30px auto 24px;
   display:grid;
   grid-template-columns: 1fr;
   gap:14px;

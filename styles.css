@@ -1,8 +1,9 @@
 .actions {
-  margin-top: -50px; /* Adjust value as needed */
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10; /* Ensure buttons are above other elements */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -50px; /* Adjust as needed */
 }
+
+/* Additional styles if necessary */

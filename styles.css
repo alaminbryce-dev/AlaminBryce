@@ -1,9 +1,11 @@
-.actions {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: -50px; /* Adjust as needed */
+.hero {
+    position: relative;
+    /* other styles */
 }
 
-/* Additional styles if necessary */
+.action-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* other styles */
+}

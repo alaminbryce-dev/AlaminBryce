@@ -29,11 +29,11 @@ shareBtn.addEventListener('click', async () => {
 const contributors = [
   { name: "Drew Ayling", amount: 156 },
   { name: "Zitronen", amount: 140 },
-  { name: "isaidgetlost", amount: 90 },
-  { name: "Akishira", amount: 154 },
+  { name: "Grimleal", amount: 70 },
+  { name: "Akishira", amount: 167 },
   { name: "DerBlutKaiser", amount: 91 },
   { name: "hdctbpal", amount: 130 },
-  { name: "JustSomeLewdDude", amount: 75 }
+  { name: "JustSomeLewdDude", amount: 84 }
 ];
 
 function formatMoney(n){ 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 175,                       // ← change this anytime
+  current: 237,                       // ← change this anytime
   unit: 'monthly earning',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'money',                     // 'count' or 'money'
   milestones: [

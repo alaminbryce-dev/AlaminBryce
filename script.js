@@ -32,7 +32,7 @@ const contributors = [
   { name: "Grimleal", amount: 70 },
   { name: "Akishira", amount: 167 },
   { name: "DerBlutKaiser", amount: 91 },
-  { name: "hdctbpal", amount: 130 },
+  { name: "hdctbpal", amount: 142 },
   { name: "JustSomeLewdDude", amount: 84 }
 ];
 

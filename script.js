@@ -31,7 +31,7 @@ const contributors = [
   { name: "Zitronen", amount: 150 },
   { name: "Grimleal", amount: 70 },
   { name: "Akishira", amount: 167 },
-  { name: "DerBlutKaiser", amount: 91 },
+  { name: "Uiai Uea", amount: 65 },
   { name: "hdctbpal", amount: 143 },
   { name: "JustSomeLewdDude", amount: 84 }
 ];
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 249,                       // ← change this anytime
+  current: 242,                       // ← change this anytime
   unit: 'monthly earning',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'money',                     // 'count' or 'money'
   milestones: [

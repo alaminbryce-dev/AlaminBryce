@@ -29,7 +29,7 @@ shareBtn.addEventListener('click', async () => {
 const contributors = [
   { name: "Drew Ayling", amount: 156 },
   { name: "Zitronen", amount: 150 },
-  { name: "Grimleal", amount: 70 },
+  { name: "Grimleal", amount: 84 },
   { name: "Akishira", amount: 167 },
   { name: "Uiai Uea", amount: 65 },
   { name: "hdctbpal", amount: 143 },

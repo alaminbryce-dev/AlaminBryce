@@ -29,7 +29,7 @@ shareBtn.addEventListener('click', async () => {
 const contributors = [
   { name: "Drew Ayling", amount: 169 },
   { name: "Zitronen", amount: 160 },
-  { name: "Grimleal", amount: 84 },
+  { name: "Grimleal", amount: 97 },
   { name: "Akishira", amount: 180 },
   { name: "Uiai Uea", amount: 70 },
   { name: "hdctbpal", amount: 156 },
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 266,                       // ← change this anytime
+  current: 281,                       // ← change this anytime
   unit: 'monthly earning',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'money',                     // 'count' or 'money'
   milestones: [

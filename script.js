@@ -27,13 +27,13 @@ shareBtn.addEventListener('click', async () => {
  * amount: number (USD or any currency symbol you like in formatMoney)
  */
 const contributors = [
-  { name: "Drew Ayling", amount: 169 },
+  { name: "Drew Ayling", amount: 182 },
   { name: "Zitronen", amount: 160 },
   { name: "Grimleal", amount: 97 },
   { name: "Akishira", amount: 180 },
-  { name: "Uiai Uea", amount: 70 },
+  { name: "Richard Duffus", amount: 96 },
   { name: "hdctbpal", amount: 156 },
-  { name: "JustSomeLewdDude", amount: 93 }
+  { name: "Uiai Uea", amount: 70 }
 ];
 
 function formatMoney(n){ 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 281,                       // ← change this anytime
+  current: 267,                       // ← change this anytime
   unit: 'monthly earning',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'money',                     // 'count' or 'money'
   milestones: [

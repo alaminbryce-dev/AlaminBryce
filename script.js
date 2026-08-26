@@ -32,8 +32,8 @@ const contributors = [
   { name: "Grimleal", amount: 97 },
   { name: "Akishira", amount: 180 },
   { name: "Richard Duffus", amount: 96 },
-  { name: "hdctbpal", amount: 156 },
-  { name: "Uiai Uea", amount: 70 }
+  { name: "hdctbpal", amount: 168 },
+  { name: "OkieDokieSnokie", amount: 90 }
 ];
 
 function formatMoney(n){ 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', renderRanking);
  * - mode: 'count' or 'money'
  */
 const milestoneConfig = {
-  current: 267,                       // ← change this anytime
+  current: 290,                       // ← change this anytime
   unit: 'monthly earning',                   // e.g., 'patrons' or 'USD' or 'IDR'
   mode: 'money',                     // 'count' or 'money'
   milestones: [

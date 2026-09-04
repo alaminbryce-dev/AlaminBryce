@@ -8,17 +8,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="favicon.png">
-  <meta name="description" content="High tiers get 4 extra videos & pics per post! ($12 and higher)" />
+  <link rel="icon" href="favicon.ico?v=6" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=6">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="description" content="700+ posts totaling 20.000+ content in 4 years" />
 </head>
 <body>
   <header class="site-header">
     <div class="brand">
       <h1>AlaminBryce</h1>
-      <p class="subtitle">High tiers get 4 extra videos &amp; pics per post! ($12 and higher)</p>
+      <p class="subtitle">700+ posts totaling 20.000+ content in 4 years</p>
     </div>
     <button id="shareBtn" class="icon-btn" aria-label="Share this page" title="Share">
-      <!-- Share icon (no text) -->
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M18 8a3 3 0 1 0-2.83-4H15a3 3 0 0 0 .17 1l-7.2 4a3 3 0 1 0 0 6l7.2 4c-.11.31-.17.65-.17 1a3 3 0 1 0 1.17-2.36l-7.2-4a3 3 0 0 0 0-1.28l7.2-4C16.83 8.36 17.39 8 18 8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
@@ -26,18 +27,16 @@
   </header>
 
   <main>
-    <!-- Top image with subtle fade into background; sized so other content stays visible on mobile -->
     <section class="hero">
       <div class="hero-img-wrap">
-        <img src="top-image.png" alt="Feature image" class="hero-img" />
+        <img src="oc-hero.png" alt="AlaminBryce original character" class="hero-img" />
       </div>
     </section>
 
     <section class="actions">
-      
       <a class="card patreon" href="https://patreon.com/AlaminBryce" target="_blank" rel="noopener">
         <div class="thumb">
-          <img src="patreon.png" alt="Patreon image">
+          <img src="patreon.png" alt="Patreon">
         </div>
         <div class="text">
           <h2>PATREON</h2>
@@ -45,95 +44,9 @@
         </div>
       </a>
 
-                <!-- RANKING / PODIUM -->
-    <section class="ranking" aria-labelledby="ranking-title">
-      <h2 id="ranking-title" class="ranking-title">🏆 Top Supporters (All Time)</h2>
-
-      <!-- Podium -->
-      <div class="podium" role="img" aria-label="Top three supporters podium">
-        <div class="podium-col second">
-          <div class="crown" aria-hidden="true"></div>
-          <div class="name" id="p2-name">—</div>
-          <div class="amount" id="p2-amount">$0</div>
-          <div class="block block-silver" id="p2-block" title="2nd place"></div>
-          <div class="place">🥈 #2</div>
-        </div>
-
-        <div class="podium-col first">
-          <div class="crown big" aria-hidden="true"></div>
-          <div class="name" id="p1-name">—</div>
-          <div class="amount" id="p1-amount">$0</div>
-          <div class="block block-gold" id="p1-block" title="1st place"></div>
-          <div class="place">🥇 #1</div>
-        </div>
-
-        <div class="podium-col third">
-          <div class="crown" aria-hidden="true"></div>
-          <div class="name" id="p3-name">—</div>
-          <div class="amount" id="p3-amount">$0</div>
-          <div class="block block-bronze" id="p3-block" title="3rd place"></div>
-          <div class="place">🥉 #3</div>
-        </div>
-      </div>
-
-      <!-- Rest of the leaderboard -->
-      <div class="leaderboard">
-        <ol id="leaderboard-list" class="leaderboard-list" start="4" aria-label="Supporters ranked from 4th place onward">
-          <!-- Filled by JS -->
-        </ol>
-      </div>
-    </section>
-
-    <!-- MILESTONE TRACKER -->
-<section class="milestone" aria-labelledby="milestone-title">
-  <h2 id="milestone-title" class="milestone-title">🎉 Milestones 📈</h2>
-
-  <div class="milestone-card">
-    <div class="milestone-header">
-      <div class="milestone-status">
-        <span id="ms-current" class="ms-figure">0</span>
-        <span id="ms-unit" class="ms-unit">patrons</span>
-        <span class="ms-sep">·</span>
-        <span id="ms-goal-label" class="ms-goal-label">next: —</span>
-      </div>
-      <div class="ms-sticker" aria-hidden="true">💖</div>
-    </div>
-
-    <!-- progress bar -->
-    <div class="ms-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-      <div class="ms-progress-fill" id="ms-fill">
-        <div class="ms-sparkle" aria-hidden="true">✨</div>
-      </div>
-    </div>
-
-    <!-- milestones row -->
-    <ol class="ms-steps" id="ms-steps" aria-label="Milestone steps">
-      <!-- JS will render:
-        <li class="step completed|current|upcoming">
-          <span class="dot"></span>
-          <span class="label">Label</span>
-        </li>
-      -->
-    </ol>
-
-    <!-- (optional) celebratory note -->
-    <p id="ms-note" class="ms-note" hidden>You're amazing! Next reward unlocking soon 🫶</p>
-  </div>
-</section>
-
-      <a class="card discord" href="https://www.pixiv.net/en/users/127201689" target="_blank" rel="noopener">
-        <div class="thumb">
-          <img src="pixiv.png" alt="Pixiv logo">
-        </div>
-        <div class="text">
-          <h2>PIXIV</h2>
-          <p>To see *minor* girls</p>
-        </div>
-      </a>
-      
       <a class="card instagram" href="https://alaminbryce.fanbox.cc/" target="_blank" rel="noopener">
         <div class="thumb">
-          <img src="fanbox.jpg" alt="Fanbox image">
+          <img src="fanbox.jpg" alt="Fanbox">
         </div>
         <div class="text">
           <h2>FANBOX</h2>
@@ -141,13 +54,105 @@
         </div>
       </a>
 
+      <section class="ranking" aria-labelledby="ranking-title">
+        <h2 id="ranking-title" class="ranking-title">🏆 Top Supporters (All Time)</h2>
+
+        <div class="podium" role="img" aria-label="Top three supporters podium">
+          <div class="podium-col second">
+            <div class="crown" aria-hidden="true"></div>
+            <div class="name" id="p2-name">—</div>
+            <div class="amount" id="p2-amount">$0</div>
+            <div class="block block-silver" id="p2-block" title="2nd place"></div>
+            <div class="place">🥈 #2</div>
+          </div>
+
+          <div class="podium-col first">
+            <div class="crown big" aria-hidden="true"></div>
+            <div class="name" id="p1-name">—</div>
+            <div class="amount" id="p1-amount">$0</div>
+            <div class="block block-gold" id="p1-block" title="1st place"></div>
+            <div class="place">🥇 #1</div>
+          </div>
+
+          <div class="podium-col third">
+            <div class="crown" aria-hidden="true"></div>
+            <div class="name" id="p3-name">—</div>
+            <div class="amount" id="p3-amount">$0</div>
+            <div class="block block-bronze" id="p3-block" title="3rd place"></div>
+            <div class="place">🥉 #3</div>
+          </div>
+        </div>
+
+        <div class="leaderboard">
+          <ol id="leaderboard-list" class="leaderboard-list" start="4" aria-label="Supporters ranked from 4th to 10th">
+          </ol>
+        </div>
+      </section>
+
+      <button type="button" class="card tutorial" id="tutorialBtn" popovertarget="toast" aria-describedby="tutorial-soon">
+        <div class="thumb tutorial-thumb" aria-hidden="true">
+          <svg viewBox="0 0 120 150" width="100%" height="100%">
+            <rect width="120" height="150" rx="16" fill="#e8f4ff"/>
+            <circle cx="60" cy="68" r="28" fill="#0d47a1"/>
+            <polygon points="52,54 52,82 78,68" fill="#ffffff"/>
+            <rect x="28" y="108" width="64" height="10" rx="5" fill="#9ec4ef"/>
+            <rect x="38" y="122" width="44" height="8" rx="4" fill="#cfe9ff"/>
+          </svg>
+        </div>
+        <div class="text">
+          <h2>TUTORIAL</h2>
+          <p id="tutorial-soon">Coming soon</p>
+        </div>
+        <span class="soon-badge">Soon</span>
+      </button>
+
+      <section class="milestone" aria-labelledby="milestone-title">
+        <h2 id="milestone-title" class="milestone-title">🎉 Milestones 📈</h2>
+
+        <div class="milestone-card">
+          <div class="milestone-header">
+            <div class="milestone-status">
+              <span id="ms-current" class="ms-figure">0</span>
+              <span id="ms-unit" class="ms-unit">patrons</span>
+              <span class="ms-sep">·</span>
+              <span id="ms-goal-label" class="ms-goal-label">next: —</span>
+            </div>
+            <div class="ms-sticker" aria-hidden="true">💖</div>
+          </div>
+
+          <div class="ms-track">
+            <div class="ms-now" id="ms-now" aria-hidden="true"></div>
+            <div class="ms-progress" role="progressbar" aria-valuemin="0" aria-valuemax="500" aria-valuenow="0">
+              <div class="ms-progress-fill" id="ms-fill">
+                <div class="ms-sparkle" aria-hidden="true">✨</div>
+              </div>
+              <div id="ms-ticks"></div>
+            </div>
+            <div class="ms-scale" id="ms-scale" aria-hidden="true"></div>
+          </div>
+
+          <ol class="ms-steps" id="ms-steps" aria-label="Milestone steps"></ol>
+          <p id="ms-note" class="ms-note" hidden>You're amazing! Next reward unlocking soon 🫶</p>
+        </div>
+      </section>
+
+      <a class="card pixiv" href="https://www.pixiv.net/en/users/127201689" target="_blank" rel="noopener">
+        <div class="thumb">
+          <img src="pixiv.png" alt="Pixiv">
+        </div>
+        <div class="text">
+          <h2>PIXIV</h2>
+          <p>More extreme contents</p>
+        </div>
+      </a>
+
       <a class="card discord" href="https://discord.gg/r2p8jU83Wm" target="_blank" rel="noopener">
         <div class="thumb">
-          <img src="discord.png" alt="Discord image">
+          <img src="discord.png" alt="Discord">
         </div>
         <div class="text">
           <h2>DISCORD</h2>
-          <p>Join the community server</p>
+          <p>for extra pics</p>
         </div>
       </a>
     </section>
@@ -156,6 +161,8 @@
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> AlaminBryce</p>
   </footer>
+
+  <div id="toast" class="toast" popover="auto" role="status">Tutorials are coming soon.</div>
 
   <script src="script.js"></script>
 </body>

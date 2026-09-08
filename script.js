@@ -205,7 +205,7 @@ function renderMilestones(){
     ? 'goal completed 🎉'
     : `next: ${nextLabel?.label} (${formatMilestoneValue(nextGoal)})`;
 
-  const stepEls = stepsEl.querySelectorSelectorAll('.step');
+  const stepEls = stepsEl.querySelectorAll('.step');
   sorted.forEach((m, idx)=>{
     const el = stepEls[idx];
     el.classList.remove('completed','current','upcoming');

@@ -31,15 +31,15 @@ if (tutorialBtn && toast && typeof toast.showPopover !== 'function') {
 
 const contributors = [
   { name: "Drew", amount: 181.86 },
+  { name: "Akishira", amount: 179.84 },
   { name: "Zitronen tee", amount: 170 },
   { name: "hdctbpal", amount: 168.87 },
   { name: "Grimleal", amount: 97.42 },
   { name: "Richard Duffus", amount: 96.03 },
-  { name: "OkieDokieSnokie", amount: 90 },
-  { name: "Uiai Uea", amount: 75 },
-  { name: "Implosion2o9", amount: 71.92 },
-  { name: "ZosoPhoenix", amount: 70 },
-  { name: "LucLorenzo", amount: 63.99 }
+  { name: "JustSomeLewdDude", amount: 92.98 },
+  { name: "DerBlutKaiser", amount: 90.93 },
+  { name: "Yam", amount: 90.93 },
+  { name: "OkieDokieSnokie", amount: 90 }
 ];
 
 function formatMoney(n){
@@ -205,7 +205,7 @@ function renderMilestones(){
     ? 'goal completed 🎉'
     : `next: ${nextLabel?.label} (${formatMilestoneValue(nextGoal)})`;
 
-  const stepEls = stepsEl.querySelectorAll('.step');
+  const stepEls = stepsEl.querySelectorSelectorAll('.step');
   sorted.forEach((m, idx)=>{
     const el = stepEls[idx];
     el.classList.remove('completed','current','upcoming');
